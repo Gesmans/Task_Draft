@@ -1,0 +1,45 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/To-do List/css/To-do-List.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="/To-do List/font-awesome-4.7.0/css/font-awesome.min.css">
+
+  </head>
+  <title>To-Do List</title>
+  <body>
+    <ul id="sticky-list" class="sticky-list">
+      <li id="sticky-note" class="sticky">
+        <a href="#" >
+          <div id="sticky-delete" class="fa fa-trash" onclick="stickyDelete()"></div>
+          <h2 contenteditable="true">To-Do List</h2>
+          <img class="underline" src="/To-do List/Images/Underline.png"/>
+          <div class="float-container">
+            <div id="error" class="error">Please enter a Task...</div>
+            <div id="tasker-header" class="tasker-header">
+              <input 
+                type="text"
+                id="input-task"
+                class="input"
+                placeholder="Enter a Task..."
+              />
+              <button onclick="newItem()" id="click" class="fa fa-plus"></button>
+            </div>
+          </div>
+          <ul id="tasks"></ul>
+          <div class="sticky-footer">
+            <p>You have<span class="pendingTasks"></span> Pending Tasks</p>
+            <button onclick="clearAll()" type="button" class="button">Clear All</button>
+          </div>
+        </a>
+      </li>
+      
+    </ul>
+    <div class="footer">
+      <div style="padding-right: 10px;">Create another List select here -></div>
+      <button onclick="newClone()" type="button" class="button">Click Here </button>
+    </div>
+  </body>
+  <script src="/To-do List/js/To-do-List.js"></script>
+
+</html>

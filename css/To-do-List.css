@@ -1,0 +1,220 @@
+body {
+  background: url(/To-do\ List/Images/OfficeTable.jpg);
+  font-family: "Sticky Notes";
+  margin: 20px auto;
+}
+
+*{
+  margin:0;
+  padding:0;
+}
+
+.button {
+  font-family: "Sticky Notes";
+  border: 1px solid black;
+  background-color: transparent;
+  border-radius: 100px;
+  padding: 2px 10px;
+}
+
+.button:hover {
+  background-color: grey;
+  color: white;
+  border: solid 1px white;
+  transition: 0.5s ease
+}
+
+
+.sticky-list, .sticky {
+  list-style:none;
+}
+
+
+.sticky-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+
+}
+
+
+.sticky-list .sticky a {
+  text-decoration:none;
+  color:#000;
+  background:#ffc;
+  display:block;
+  height:auto;
+  width:400px;
+  padding:1em;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+         0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+         0 12.5px 10px rgba(0, 0, 0, 0.06),
+         0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+         0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+         0 100px 80px rgba(0, 0, 0, 0.12);
+         transform: translate(30px) rotate(-6deg);
+  transition: transform .15s linear;
+
+}
+
+.sticky-list .sticky {
+  margin:1em;
+}
+
+.sticky-list .sticky a:hover, .sticky-list .sticky a:focus {
+  transform: scale(1);
+  position:relative;
+  z-index:5;
+}
+
+.fa-trash {
+  color: black ;
+  cursor: pointer;
+  position: absolute;
+  right: 0.8rem;
+  top: 0.4rem;
+  ;
+}
+
+.fa-trash:hover {
+  transition: 0.2s ease;
+  transform: rotate(-45deg);
+  color: red;
+}
+
+
+h2 {
+  font-family: "Sticky Notes";
+  font-weight: bold;
+  font-size: 2.6em;
+  text-transform: uppercase;
+  color: black ;
+transform: rotate(-5deg);}
+
+.underline {
+  width: 200px;
+  transform: rotate(-5deg);
+  margin: -20px 0px 0px;
+}
+
+.float-container {
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  width: auto;
+
+}
+.error {
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.tasker-header {
+  color: black;
+  font-size: 15px;
+  height: auto;
+  text-decoration: none;
+  outline: none;
+  width: auto;
+  
+}
+
+.input {
+  text-decoration: none;
+  outline: none;
+  font-family: "Sticky Notes";
+  font-size: 15px;
+
+
+}
+.fa-plus {
+  cursor: pointer;
+  background-color: transparent;
+  border: 0px solid black;
+  right: 0;
+  top: 0;
+  text-align: center;
+  padding: 7px;
+  
+
+
+}
+
+ a ul {
+  border: none;
+  outline: none;
+  user-select: none;
+}
+.list {
+  margin: 0px;
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  list-style-type: none;
+  font-size: 18px;
+  transition: 0.2s;
+}
+
+.list:hover {
+  background-color: rgb(10, 28 ,35 .1);
+
+}
+
+.fa-times {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: red ;
+  padding: 17px;
+
+}
+
+.fa-times:hover {
+  color: red;
+  transition: 0.5s ease;
+} 
+
+ul li .fa-check {
+  color: darkgreen;
+  text-decoration: line-through;
+
+}
+
+ul li .fa-check:before {
+  content: '';
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+  
+
+}
+
+.sticky-footer {
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+
+.footer {
+  display: flex;
+  position: fixed;
+  padding: 10px 20px;
+  bottom: 0px;
+  width: 100%;
+}
+
+#template {
+  display: none;
+}
