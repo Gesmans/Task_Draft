@@ -1,5 +1,5 @@
 body {
-  background: url(/To-do\ List/Images/OfficeTable.jpg);
+  background: url(/To-do\ List/Task_Draft/Images/OfficeTable.jpg);
   font-family: "Sticky Notes";
   margin: 20px auto;
 }
@@ -18,7 +18,7 @@ body {
 }
 
 .button:hover {
-  background-color: grey;
+  background-color: red ;
   color: white;
   border: solid 1px white;
   transition: 0.5s ease
@@ -185,7 +185,7 @@ ul li .fa-check {
 ul li .fa-check:before {
   content: '';
   position: absolute;
-  border-color: #fff;
+  border-color: darkgreen;
   border-style: solid;
   border-width: 0 2px 2px 0;
   top: 10px;
