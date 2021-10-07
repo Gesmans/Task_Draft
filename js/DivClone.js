@@ -6,23 +6,20 @@ function newClone() {
     <a href="#" >
       <div id="sticky-delete" class="fa fa-trash" onclick="stickyDelete()"></div>
       <h2 contenteditable="true">To-Do List</h2>
-      <img class="underline" src="/To-do List/Images/Underline.png"/>
+      <img class="underline" src="/To-do List/Task_Draft/Images/Underline.png"/>
       <div class="float-container">
         <div id="error" class="error">Please enter a Task...</div>
-        <div id="tasker-header" class="tasker-header">
-          <input contenteditable
-            type="text"
-            id="input-task"
-            class="input"
-            placeholder="Enter a Task..."
-          />
-          <button onclick="newItem()" id="click" class="fa fa-plus"></button>
-        </div>
+        <form id="tasker-header" class="todo-form" onclick="addItem(event)">
+          <input type="text" id="input-task" class="input" placeholder="Enter a Task..."/>
+          <button type="submit" id="click" class="fa fa-plus" onclick="addTodo()"></button>
+        </form>
       </div>
-      <ul id="tasks"></ul>
+      <ul id="tasks" class="todo-items">
+    
+      </ul>
       <div class="sticky-footer">
         <p>You have<span class="pendingTasks"></span> Pending Tasks</p>
-        <button onclick="clearAll()" type="button" class="button">Clear All</button>
+        <button onclick="removeArray()" type="button" class="button">Clear All</button>
       </div>
     </a>
   </li>`

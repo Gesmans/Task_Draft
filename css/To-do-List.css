@@ -146,6 +146,8 @@ transform: rotate(-5deg);}
   border: none;
   outline: none;
   user-select: none;
+  list-style-type: none;
+  font-size: 20px;
 }
 .list {
   margin: 0px;
@@ -163,11 +165,12 @@ transform: rotate(-5deg);}
 }
 
 .fa-times {
-  position: absolute;
-  right: 0;
-  top: 0;
+  border: 0px solid ;
+  background-color: transparent;
   color: red ;
-  padding: 17px;
+  margin-left: 10px;
+  cursor: pointer;
+  float: right;
 
 }
 
@@ -188,14 +191,19 @@ ul li .fa-check:before {
   border-color: darkgreen;
   border-style: solid;
   border-width: 0 2px 2px 0;
-  top: 10px;
-  left: 16px;
+  
+  left: 20px;
   transform: rotate(45deg);
   height: 15px;
   width: 7px;
   
-
 }
+
+.checkbox {
+  
+    margin-right: 10px;
+  }
+  
 
 .sticky-footer {
   display: flex;
@@ -218,3 +226,20 @@ ul li .fa-check:before {
 #template {
   display: none;
 }
+
+.item {
+  margin-left: 20px;
+  padding: 10px;
+  font-size: 1.3rem;
+}
+
+.item:first-child {
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+.item:last-child {
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+
